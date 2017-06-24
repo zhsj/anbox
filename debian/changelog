@@ -1,4 +1,4 @@
-anbox (0.0~git20170620-1) unstable; urgency=medium
+anbox (0.0~git20170620-1) stretch; urgency=medium
 
   * Update to git20170620
   * update debian policy to 4.0.0
