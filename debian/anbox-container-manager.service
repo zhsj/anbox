@@ -6,7 +6,7 @@ After=anbox-container-bridge.service
 [Service]
 ExecStartPre=/sbin/modprobe ashmem_linux
 ExecStartPre=/sbin/modprobe binder_linux
-ExecStart=/usr/bin/anbox container-manager --privileged
+ExecStart=/usr/bin/anbox container-manager --daemon --privileged --data-path=/var/lib/anbox
 
 [Install]
 WantedBy=multi-user.target
