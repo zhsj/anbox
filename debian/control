@@ -24,7 +24,7 @@ Build-Depends: cmake,
  libsdl2-image-dev,
  lxc-dev,
  protobuf-compiler,
-Standards-Version: 3.9.8
+Standards-Version: 4.0.0
 Homepage: https://anbox.io
 Vcs-Git: https://github.com/zhsj/anbox.git
 Vcs-Browser: https://github.com/zhsj/anbox

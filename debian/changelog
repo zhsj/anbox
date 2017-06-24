@@ -1,6 +1,7 @@
 anbox (0.0~git20170620-1) unstable; urgency=medium
 
   * Update to git20170620
+  * update debian policy to 4.0.0
 
  -- Shengjing Zhu <i@zhsj.me>  Sat, 24 Jun 2017 09:53:39 +0800
 
