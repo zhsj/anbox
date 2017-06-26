@@ -1,12 +1,14 @@
 [Unit]
 Description=Anbox Container Manager
-Wants=anbox-container-bridge.service
-After=anbox-container-bridge.service
+After=network.target
+Wants=network.target
 
 [Service]
 ExecStartPre=/sbin/modprobe ashmem_linux
 ExecStartPre=/sbin/modprobe binder_linux
+ExecStartPre=/usr/bin/anbox-bridge start
 ExecStart=/usr/bin/anbox container-manager --daemon --privileged --data-path=/var/lib/anbox
+ExecStopPost=/usr/bin/anbox-bridge stop
 
 [Install]
 WantedBy=multi-user.target
