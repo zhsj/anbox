@@ -1,3 +1,9 @@
+anbox (0.0~git20170620-4) stretch; urgency=medium
+
+  * Fix anbox-dkms architecture
+
+ -- Shengjing Zhu <i@zhsj.me>  Wed, 19 Jul 2017 13:58:55 +0800
+
 anbox (0.0~git20170620-3) stretch; urgency=medium
 
   * move anbox-bridge to anbox-container-manager service.

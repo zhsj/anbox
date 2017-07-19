@@ -39,7 +39,7 @@ Description: Android in a box
  Run Android applications on any GNU/Linux operating system.
 
 Package: anbox-dkms
-Architecture: linux-any
+Architecture: all
 Depends: ${misc:Depends}
 Provides: anbox-modules
 Description: Kernel module for Anbox
