@@ -2,22 +2,23 @@ Source: anbox
 Section: utils
 Priority: optional
 Maintainer: Shengjing Zhu <i@zhsj.me>
-Build-Depends: cmake,
+Build-Depends:
+ cmake,
  debhelper (>= 10),
  dh-exec,
  dkms,
  googletest,
- libcap-dev,
- libegl1-mesa-dev,
- libgles2-mesa-dev,
- libglm-dev,
  libboost-filesystem-dev,
  libboost-iostreams-dev,
  libboost-log-dev,
  libboost-program-options-dev,
  libboost-system-dev,
  libboost-test-dev,
+ libcap-dev,
  libdbus-cpp-dev,
+ libegl1-mesa-dev,
+ libgles2-mesa-dev,
+ libglm-dev,
  libprocess-cpp-dev,
  libprotobuf-dev,
  libsdl2-dev,
@@ -31,17 +32,21 @@ Vcs-Browser: https://github.com/zhsj/anbox
 
 Package: anbox
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends},
+Depends:
  anbox-dkms | anbox-modules,
  iptables,
- lxc
+ lxc,
+ ${misc:Depends},
+ ${shlibs:Depends},
 Description: Android in a box
  Run Android applications on any GNU/Linux operating system.
 
 Package: anbox-dkms
 Architecture: all
-Depends: ${misc:Depends}
-Provides: anbox-modules
+Depends:
+ ${misc:Depends},
+Provides:
+ anbox-modules,
 Description: Kernel module for Anbox
  This package contains a out-of-tree version of the core Android
  kernel functionalities binder and ashmem.
