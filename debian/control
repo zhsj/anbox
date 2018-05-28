@@ -5,7 +5,6 @@ Maintainer: Shengjing Zhu <i@zhsj.me>
 Build-Depends:
  cmake,
  debhelper (>= 10),
- dh-exec,
  dkms,
  libboost-filesystem-dev,
  libboost-iostreams-dev,

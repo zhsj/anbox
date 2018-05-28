@@ -13,3 +13,18 @@ override_dh_auto_configure:
 		-DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH) \
 		-DANBOX_VERSION=$(DEB_VERSION)\
 		-DANBOX_VERSION_SUFFIX=debian
+
+override_dh_auto_install:
+	dh_auto_install
+	rm -rf $(CURDIR)/debian/tmp/usr/lib/backward
+	rm -rf $(CURDIR)/debian/tmp/usr/include
+	mkdir -p $(CURDIR)/debian/tmp/usr/share/pixmaps/
+	install -m644 snap/gui/icon.png $(CURDIR)/debian/tmp/usr/share/pixmaps/anbox.png
+	mkdir -p $(CURDIR)/debian/tmp/usr/share/applications/
+	install -m644 debian/anbox.desktop -t $(CURDIR)/debian/tmp/usr/share/applications/
+	mkdir -p $(CURDIR)/debian/tmp/usr/share/anbox/
+	install -m755 scripts/anbox-bridge.sh -t $(CURDIR)/debian/tmp/usr/share/anbox/
+	mkdir -p $(CURDIR)/debian/tmp/usr/lib/systemd/user/
+	install -m644 debian/anbox-session-manager.service -t $(CURDIR)/debian/tmp/usr/lib/systemd/user/
+	mkdir -p $(CURDIR)/debian/tmp/lib/systemd/system/
+	install -m644 debian/anbox-container-manager.service -t $(CURDIR)/debian/tmp/lib/systemd/system/
