@@ -15,7 +15,6 @@ Build-Depends:
  libboost-system-dev,
  libboost-test-dev,
  libcap-dev,
- libdbus-cpp-dev,
  libegl1-mesa-dev,
  libgles2-mesa-dev,
  libglm-dev,
@@ -23,6 +22,7 @@ Build-Depends:
  libprotobuf-dev,
  libsdl2-dev,
  libsdl2-image-dev,
+ libsystemd-dev,
  lxc-dev,
  protobuf-compiler,
 Standards-Version: 4.0.0
