@@ -32,7 +32,7 @@ Vcs-Browser: https://github.com/zhsj/anbox
 Package: anbox
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
- anbox-modules,
+ anbox-dkms | anbox-modules,
  iptables,
  lxc
 Description: Android in a box
