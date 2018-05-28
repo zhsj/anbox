@@ -25,6 +25,7 @@ Build-Depends:
  libsystemd-dev,
  lxc-dev,
  protobuf-compiler,
+ python (<< 2.8),
 Standards-Version: 4.0.0
 Homepage: https://anbox.io
 Vcs-Git: https://github.com/zhsj/anbox.git
