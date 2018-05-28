@@ -38,6 +38,8 @@ Depends:
  lxc,
  ${misc:Depends},
  ${shlibs:Depends},
+Suggests:
+ dbus-user-session,
 Description: Android in a box
  Run Android applications on any GNU/Linux operating system.
 
