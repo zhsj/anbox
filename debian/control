@@ -17,7 +17,7 @@ Build-Depends:
  libgles2-mesa-dev,
  libglm-dev,
  libgmock-dev,
- libprocess-cpp-dev,
+ libproperties-cpp-dev,
  libprotobuf-dev,
  libsdl2-dev,
  libsdl2-image-dev,
