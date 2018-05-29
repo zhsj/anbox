@@ -24,6 +24,7 @@ override_dh_auto_install:
 	install -m644 debian/anbox.desktop -t $(CURDIR)/debian/tmp/usr/share/applications/
 	mkdir -p $(CURDIR)/debian/tmp/usr/share/anbox/
 	install -m755 scripts/anbox-bridge.sh -t $(CURDIR)/debian/tmp/usr/share/anbox/
+	install -m755 scripts/anbox-shell.sh -t $(CURDIR)/debian/tmp/usr/share/anbox/
 	mkdir -p $(CURDIR)/debian/tmp/usr/lib/systemd/user/
 	install -m644 debian/anbox-session-manager.service -t $(CURDIR)/debian/tmp/usr/lib/systemd/user/
 	mkdir -p $(CURDIR)/debian/tmp/lib/systemd/system/
