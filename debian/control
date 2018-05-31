@@ -25,7 +25,7 @@ Build-Depends:
  lxc-dev,
  protobuf-compiler,
  python (<< 2.8),
-Standards-Version: 4.0.0
+Standards-Version: 4.1.4
 Homepage: https://anbox.io
 Vcs-Git: https://github.com/zhsj/anbox.git
 Vcs-Browser: https://github.com/zhsj/anbox
