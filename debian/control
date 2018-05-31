@@ -1,5 +1,5 @@
 Source: anbox
-Section: utils
+Section: contrib/utils
 Priority: optional
 Maintainer: Shengjing Zhu <i@zhsj.me>
 Build-Depends:
