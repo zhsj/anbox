@@ -47,8 +47,6 @@ Package: anbox-dkms
 Architecture: all
 Depends:
  ${misc:Depends},
-Provides:
- anbox-modules,
 Description: Kernel module for Anbox
  This package contains a out-of-tree version of the core Android
  kernel functionalities binder and ashmem.
