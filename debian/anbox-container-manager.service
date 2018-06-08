@@ -1,5 +1,6 @@
 [Unit]
 Description=Anbox Container Manager
+Documentation=man:anbox(1)
 After=network.target
 Wants=network.target
 
