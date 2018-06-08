@@ -6,3 +6,4 @@ Type=Application
 Icon=anbox
 Exec=anbox launch --package=org.anbox.appmgr --component=org.anbox.appmgr.AppViewActivity
 Terminal=false
+Keywords=android;container;
