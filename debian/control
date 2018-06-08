@@ -27,8 +27,8 @@ Build-Depends:
  python (<< 2.8),
 Standards-Version: 4.1.4
 Homepage: https://anbox.io
-Vcs-Git: https://github.com/zhsj/anbox.git
-Vcs-Browser: https://github.com/zhsj/anbox
+Vcs-Git: https://github.com/zhsj/pkg-anbox.git
+Vcs-Browser: https://github.com/zhsj/pkg-anbox
 
 Package: anbox
 Architecture: amd64
