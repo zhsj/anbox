@@ -44,6 +44,7 @@ Description: Android in a box
 
 Package: anbox-dkms
 Architecture: all
+Section: contrib/kernel
 Depends:
  ${misc:Depends},
 Description: Kernel module for Anbox
