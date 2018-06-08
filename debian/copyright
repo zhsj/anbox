@@ -1,6 +1,8 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: anbox
 Source: https://github.com/anbox/anbox
+Comment: Anbox is only functional when you have a Android system image.
+ Since there's no such image in main area, this software should be in contrib.
 
 Files: *
 Copyright: 2016-2018, Simon Fels <morphis@gravedo.de>
