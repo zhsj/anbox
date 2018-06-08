@@ -1,0 +1,47 @@
+Source: anbox
+Section: contrib/utils
+Priority: optional
+Maintainer: Shengjing Zhu <i@zhsj.me>
+Build-Depends:
+ cmake,
+ debhelper (>= 11),
+ dkms,
+ libboost-filesystem-dev,
+ libboost-iostreams-dev,
+ libboost-log-dev,
+ libboost-program-options-dev,
+ libboost-system-dev,
+ libboost-test-dev,
+ libcap-dev,
+ libegl1-mesa-dev,
+ libgles2-mesa-dev,
+ libgmock-dev,
+ libproperties-cpp-dev,
+ libprotobuf-dev,
+ libsdl2-dev,
+ libsdl2-image-dev,
+ libsystemd-dev,
+ lxc-dev,
+ protobuf-compiler,
+ python (<< 2.8),
+Standards-Version: 4.1.4
+Homepage: https://anbox.io
+Vcs-Git: https://salsa.debian.org/zhsj-guest/anbox.git
+Vcs-Browser: https://salsa.debian.org/zhsj-guest/anbox
+
+Package: anbox
+Architecture: amd64
+Depends:
+ anbox-modules-dkms,
+ iptables,
+ lxc,
+ ${misc:Depends},
+ ${shlibs:Depends},
+Recommends:
+ dbus-user-session,
+Description: Android in a box
+ Anbox is a container-based approach to boot a full Android system on a regular
+ GNU/Linux system.
+ .
+ In other words: Anbox will let you run Android on your Linux system without
+ the slowness of virtualization.

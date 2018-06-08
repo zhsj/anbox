@@ -1,0 +1,12 @@
+anbox for Debian
+---------------
+
+You should first download the Android image to /var/lib/anbox/android.img
+The prebuild image can be found at https://build.anbox.io/android-images
+.
+Then start the anbox-container-manager.service and the anbox-session-manager.service
+anbox-session-manager.service should be run as a systemd user service.
+.
+Android application should be started from desktop environment.
+
+ -- Shengjing Zhu <i@zhsj.me>  Thu, 31 May 2018 18:00:00 +0800

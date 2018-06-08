@@ -1,0 +1,345 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: anbox
+Source: https://github.com/anbox/anbox
+Comment: Anbox is only functional when you have a Android system image.
+ Since there's no such image in main area, this software should be in contrib.
+
+Files: *
+Copyright: 2016-2018, Simon Fels <morphis@gravedo.de>
+License: GPL-3
+
+Files: debian/*
+Copyright: 2017, Shengjing Zhu <i@zhsj.me>
+License: GPL-3
+
+Files: android/*
+Copyright: 2008-2016, The Android Open Source Project
+License: Apache-2.0
+
+Files: android/appmgr/src/org/anbox/appmgr/GridFragment.java
+Copyright: 2012, Loupe Inc.
+License: Apache-2.0
+
+Files: android/data/etc/apns-conf.xml
+Copyright: 2006, Google Inc.
+License: Apache-2.0
+
+Files: android/appmgr/src/org/anbox/appmgr/AppListAdapter.java
+ android/appmgr/src/org/anbox/appmgr/AppListFragment.java
+ android/appmgr/src/org/anbox/appmgr/AppModel.java
+ android/appmgr/src/org/anbox/appmgr/AppsGridFragment.java
+ android/appmgr/src/org/anbox/appmgr/AppsLoader.java
+ android/appmgr/src/org/anbox/appmgr/PackageIntentReceiver.java
+Copyright: 2016, Arnab Chakraborty
+License: Expat
+
+Files: android/appmgr/src/org/anbox/appmgr/AppViewActivity.java
+ android/appmgr/src/org/anbox/appmgr/LauncherActivity.java
+ android/appmgr/src/org/anbox/appmgr/LauncherService.java
+ android/appmgr/src/org/anbox/appmgr/MainApplication.java
+ android/appmgr/src/org/anbox/appmgr/PackageEventReceiver.java
+ android/appmgr/src/org/anbox/appmgr/PlatformService.java
+ android/hwcomposer/*
+ android/service/*
+Copyright: 2016, Simon Fels <morphis@gravedo.de>
+License: GPL-3
+
+Files: cross-compile-chroot.sh
+Copyright: 2012-2016, Canonical Ltd
+License: LGPL-3
+
+Files: cmake/FindGMock.cmake
+Copyright: 2014, Canonical Ltd
+License: LGPL-3
+
+Files: external/android-emugl/*
+Copyright: 2008-2016, The Android Open Source Project
+License: Apache-2.0
+
+Files: external/android-emugl/host/include/ETC1/etc1.h
+Copyright: 2009, Google Inc
+License: Apache-2.0
+
+Files: external/backtrace-cpp/*
+Copyright: 2013, Google Inc.
+License: Expat
+
+Files: external/glm/*
+Copyright: 2005-2015, G-Truc Creation (www.g-truc.net)
+License: Expat
+
+Files: external/nsexec/*
+Copyright: 2012-2016, Canonical, Inc
+License: GPL-2
+
+Files: external/process-cpp-minimal/*
+Copyright: 2012-2014, Canonical Ltd
+License: LGPL-3
+
+Files: external/process-cpp-minimal/CMakeLists.txt
+ external/process-cpp-minimal/include/core/testing/cross_process_sync.h
+ external/process-cpp-minimal/src/CMakeLists.txt
+ external/process-cpp-minimal/src/core/posix/CMakeLists.txt
+ external/process-cpp-minimal/src/core/posix/linux/CMakeLists.txt
+ external/process-cpp-minimal/src/core/testing/cross_process_sync.cpp
+Copyright: 2013, Canonical Ltd.
+License: GPL-3
+
+Files: external/xdg/*
+Copyright: 2015, Thomas Voß <thomas.voss.bochum@gmail.com>
+License: LGPL-3+
+
+Files: kernel/*
+Copyright: 2008-2012 Google Inc.
+License: GPL-2
+
+Files: kernel/binder/binder.h
+Copyright: 2008, Google, Inc
+  2005, Palmsource, Inc
+License: GPL-2
+
+Files: products/anbox.mk
+ products/anbox_arm64.mk
+ products/anbox_armv7a_neon.mk
+ products/anbox_x86_64.mk
+ products/arm64/device.mk
+ products/anbox.xml
+ products/overlay/frameworks/base/packages/SettingsProvider/res/values/defaults.xml
+ products/overlay/frameworks/base/packages/SystemUI/res/values/config.xml
+Copyright: 2013-2016, The Android Open-Source Project
+License: Apache-2.0
+
+Files: scripts/*
+Copyright: 2016, 2017, Simon Fels <morphis@gravedo.de>
+License: GPL-3
+
+Files: scripts/gen-emugl-entries.py
+ scripts/gen-emugl-headers.sh
+ scripts/update-emugl-sources.sh
+Copyright: 2014-2015, The Android Open Source Project
+License: Apache-2.0
+
+Files: scripts/anbox-bridge.sh
+Copyright: 2016, The Linux Containers Project
+License: Apache-2.0
+
+Files: scripts/anbox-init.sh
+Copyright: 2016, Simon Fels <morphis@gravedo.de>
+License: GPL-3
+
+Files: scripts/setup-partial-chroot.sh
+Copyright: 2016, Canonical Ltd.
+License: LGPL-3
+
+
+Files: src/*
+Copyright: 2016-2018, Simon Fels <morphis@gravedo.de>
+License: GPL-3
+
+Files: src/anbox/common/message_channel.cpp
+ src/anbox/common/message_channel.h
+ src/anbox/common/type_traits.h
+ src/anbox/graphics/buffer_queue.cpp
+ src/anbox/graphics/buffer_queue.h
+ src/anbox/graphics/emugl/*
+ src/anbox/testing/gtest_utils.h
+Copyright: 2011-2016, The Android Open Source Project
+License: Apache-2.0
+
+Files: src/anbox/common/fd_sets.h
+ src/anbox/graphics/program_family.cpp
+ src/anbox/graphics/program_family.h
+ src/anbox/network/base_socket_messenger.cpp
+ src/anbox/network/base_socket_messenger.h
+ src/anbox/network/connection_context.h
+ src/anbox/network/connections.h
+ src/anbox/network/message_receiver.h
+ src/anbox/network/message_sender.h
+ src/anbox/network/socket_connection.cpp
+ src/anbox/network/socket_connection.h
+ src/anbox/network/socket_messenger.h
+ src/anbox/rpc/template_message_processor.h
+ src/anbox/logger.cpp
+ src/anbox/logger.h
+Copyright: 2012-2015, Canonical Ltd.
+License: GPL-3
+
+Files: src/anbox/common/fd.cpp
+ src/anbox/common/fd.h
+ src/anbox/common/variable_length_array.h
+ src/anbox/common/wait_handle.cpp
+ src/anbox/common/wait_handle.h
+ src/anbox/graphics/primitives.h
+ src/anbox/network/fd_socket_transmission.cpp
+ src/anbox/network/fd_socket_transmission.h
+ src/anbox/protobuf/google_protobuf_guard.cpp
+ src/anbox/rpc/make_protobuf_object.h
+ src/anbox/rpc/pending_call_cache.cpp
+ src/anbox/rpc/pending_call_cache.h
+ src/anbox/build/config.h.in
+ src/anbox/cli.cpp
+ src/anbox/cli.h
+ src/anbox/cmds/version.cpp
+ src/anbox/cmds/version.h
+ src/anbox/cmds/wait_ready.cpp
+ src/anbox/common/dispatcher.cpp
+ src/anbox/common/dispatcher.h
+ src/anbox/not_reachable.cpp
+ src/anbox/not_reachable.h
+ src/anbox/optional.h
+Copyright: 2012-2016, Canonical Ltd.
+License: LGPL-3
+
+Files: src/anbox/graphics/emugl/DisplayManager.cpp
+  src/anbox/graphics/emugl/DisplayManager.h
+Copyright: 2016, 2017, Simon Fels <morphis@gravedo.de>
+License: GPL-3
+
+Files: src/anbox/cmds/system_info.cpp
+ src/anbox/cmds/system_info.h
+ src/anbox/dbus/codecs.h
+ src/anbox/utils/*
+Copyright: 2017, Simon Fels <morphis@gravedo.de>
+License: LGPL-3
+
+Files: src/anbox/graphics/emugl/Renderable.cpp
+ src/anbox/graphics/emugl/Renderable.h
+Copyright: 2016, Simon Fels <morphis@gravedo.de>
+License: Apache-2.0
+
+Files: src/anbox/common/scope_ptr.h
+ src/anbox/common/small_vector.h
+Copyright: 2014, The Android Open Source Project
+  2016, The Android Open Source Project
+License: GPL-2
+
+Files: src/anbox/common/binary_writer.cpp
+ src/anbox/common/binary_writer.h
+Copyright: 2016, Thomas Voss <thomas.voss.bochum@gmail.com>
+License: GPL-3
+
+Files: src/anbox/dbus/sd_bus_helpers.h
+Copyright: 2018, OpenBMC
+License: Apache-2.0
+
+Files: src/anbox/rpc/channel.cpp
+Copyright: 2012, Canonical Ltd.
+  2016, Simon Fels <morphis@gravedo.de>
+License: LGPL-3
+
+Files: tests/*
+Copyright: 2016-2017, Simon Fels <morphis@gravedo.de>
+License: GPL-3
+
+Files: tests/anbox/common/message_channel_tests.cpp
+ tests/anbox/common/scope_ptr_tests.cpp
+ tests/anbox/graphics/buffer_queue_tests.cpp
+Copyright: 2014, The Android Open Source Project
+  2016, The Android Open Source Project
+License: Apache-2.0
+
+Files: tests/anbox/common/small_vector_tests.cpp
+ tests/anbox/common/type_traits_tests.cpp
+Copyright: 2016, The Android Open Source Project
+License: GPL-2
+
+License: Apache-2.0
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ .
+ http://www.apache.org/licenses/LICENSE-2.0
+ .
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ .
+ On Debian systems, the complete text of the Apache version 2.0 license
+ can be found in "/usr/share/common-licenses/Apache-2.0".
+
+License: GPL-2
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; version 2 of the License.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <https://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: GPL-3
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, version 3 of the License.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <https://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
+
+License: LGPL-3
+ This package is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; version 3 of the
+ License.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see <https://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU Lesser General
+ Public License can be found in "/usr/share/common-licenses/LGPL-3".
+
+License: LGPL-3+
+ This package is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 3 of the License, or (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see <https://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU Lesser General
+ Public License can be found in "/usr/share/common-licenses/LGPL-3".
+
+License: Expat
+ Permission is hereby granted, free of charge, to any person obtaining a
+ copy of this software and associated documentation files (the "Software"),
+ to deal in the Software without restriction, including without limitation
+ the rights to use, copy, modify, merge, publish, distribute, sublicense,
+ and/or sell copies of the Software, and to permit persons to whom the
+ Software is furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included
+ in all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+ OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

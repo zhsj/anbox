@@ -1,0 +1,31 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/default.mk
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+%:
+	dh $@
+
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		-DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH) \
+		-DANBOX_VERSION=$(DEB_VERSION)\
+		-DANBOX_VERSION_SUFFIX=debian
+
+override_dh_auto_install:
+	dh_auto_install
+	rm -rf $(CURDIR)/debian/anbox/usr/lib/backward
+	rm -rf $(CURDIR)/debian/anbox/usr/include
+	install -d $(CURDIR)/debian/anbox/usr/share/pixmaps/
+	install -m644 snap/gui/icon.png $(CURDIR)/debian/anbox/usr/share/pixmaps/anbox.png
+	install -d $(CURDIR)/debian/anbox/usr/share/applications/
+	install -m644 debian/anbox.desktop -t $(CURDIR)/debian/anbox/usr/share/applications/
+	install -d $(CURDIR)/debian/anbox/usr/share/anbox/
+	install -m755 scripts/anbox-bridge.sh -t $(CURDIR)/debian/anbox/usr/share/anbox/
+	install -m755 scripts/anbox-shell.sh -t $(CURDIR)/debian/anbox/usr/share/anbox/
+	install -d $(CURDIR)/debian/anbox/usr/lib/systemd/user/
+	install -m644 debian/anbox-session-manager.service -t $(CURDIR)/debian/anbox/usr/lib/systemd/user/
+	install -d $(CURDIR)/debian/anbox/lib/systemd/system/
+	install -m644 debian/anbox-container-manager.service -t $(CURDIR)/debian/anbox/lib/systemd/system/

@@ -1,0 +1,22 @@
+From: Shengjing Zhu <i@zhsj.me>
+Date: Mon, 28 May 2018 16:25:05 +0800
+Subject: disable apparmor profile
+
+Signed-off-by: Shengjing Zhu <i@zhsj.me>
+---
+ src/anbox/container/lxc_container.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/anbox/container/lxc_container.cpp b/src/anbox/container/lxc_container.cpp
+index d042dde..26db026 100644
+--- a/src/anbox/container/lxc_container.cpp
++++ b/src/anbox/container/lxc_container.cpp
+@@ -214,7 +214,7 @@ void LxcContainer::start(const Configuration &configuration) {
+ 
+   setup_network();
+ 
+-  set_config_item("lxc.aa_profile", "anbox-container");
++  set_config_item("lxc.aa_profile", "unconfined");
+ 
+   if (!privileged_)
+     setup_id_maps();

@@ -1,0 +1,9 @@
+[Unit]
+Description=Anbox Session Manager
+Documentation=man:anbox(1)
+
+[Service]
+ExecStart=/usr/bin/anbox session-manager
+
+[Install]
+WantedBy=default.target

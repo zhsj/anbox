@@ -1,0 +1,57 @@
+From: Shengjing Zhu <i@zhsj.me>
+Date: Fri, 8 Jun 2018 15:10:44 +0800
+Subject: fix spelling errors in external libraries
+
+Signed-off-by: Shengjing Zhu <i@zhsj.me>
+---
+ external/process-cpp-minimal/src/core/posix/fork.cpp | 8 ++++----
+ external/xdg/xdg.cpp                                 | 2 +-
+ 2 files changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/external/process-cpp-minimal/src/core/posix/fork.cpp b/external/process-cpp-minimal/src/core/posix/fork.cpp
+index 82a225c..aa405ad 100644
+--- a/external/process-cpp-minimal/src/core/posix/fork.cpp
++++ b/external/process-cpp-minimal/src/core/posix/fork.cpp
+@@ -97,12 +97,12 @@ ChildProcess fork(const std::function<posix::exit::Status()>& main,
+             result = main();
+         } catch(const std::exception& e)
+         {
+-            std::cerr << "core::posix::fork(): An unhandled std::exception occured in the child process:" << std::endl
++            std::cerr << "core::posix::fork(): An unhandled std::exception occurred in the child process:" << std::endl
+                       << "  what(): " << e.what() << std::endl;
+             print_backtrace(std::cerr, "  ");
+         } catch(...)
+         {
+-            std::cerr << "core::posix::fork(): An unhandled exception occured in the child process." << std::endl;
++            std::cerr << "core::posix::fork(): An unhandled exception occurred in the child process." << std::endl;
+             print_backtrace(std::cerr, "  ");
+         }
+ 
+@@ -154,12 +154,12 @@ ChildProcess vfork(const std::function<posix::exit::Status()>& main,
+             result = main();
+         } catch(const std::exception& e)
+         {
+-            std::cerr << "core::posix::fork(): An unhandled std::exception occured in the child process:" << std::endl
++            std::cerr << "core::posix::fork(): An unhandled std::exception occurred in the child process:" << std::endl
+                       << "  what(): " << e.what() << std::endl;
+             print_backtrace(std::cerr, "  ");
+         } catch(...)
+         {
+-            std::cerr << "core::posix::fork(): An unhandled exception occured in the child process." << std::endl;
++            std::cerr << "core::posix::fork(): An unhandled exception occurred in the child process." << std::endl;
+             print_backtrace(std::cerr, "  ");
+         }
+ 
+diff --git a/external/xdg/xdg.cpp b/external/xdg/xdg.cpp
+index d54fdfe..19a69e9 100644
+--- a/external/xdg/xdg.cpp
++++ b/external/xdg/xdg.cpp
+@@ -30,7 +30,7 @@ fs::path throw_if_not_absolute(const fs::path& p)
+     if (p.has_root_directory())
+         return p;
+ 
+-    throw std::runtime_error{"Directores MUST be absolute."};
++    throw std::runtime_error{"Directories MUST be absolute."};
+ }
+ 
+ namespace env
