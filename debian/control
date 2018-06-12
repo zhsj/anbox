@@ -33,7 +33,7 @@ Architecture: amd64 armel armhf i386
 Depends:
  anbox-modules-dkms,
  iptables,
- lxc,
+ lxc (<< 1:3.0.0),
  ${misc:Depends},
  ${shlibs:Depends},
 Recommends:
