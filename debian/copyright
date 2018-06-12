@@ -89,15 +89,6 @@ Files: external/xdg/*
 Copyright: 2015, Thomas Voß <thomas.voss.bochum@gmail.com>
 License: LGPL-3+
 
-Files: kernel/*
-Copyright: 2008-2012 Google Inc.
-License: GPL-2
-
-Files: kernel/binder/binder.h
-Copyright: 2008, Google, Inc
-  2005, Palmsource, Inc
-License: GPL-2
-
 Files: products/anbox.mk
  products/anbox_arm64.mk
  products/anbox_armv7a_neon.mk
