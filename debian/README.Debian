@@ -1,12 +1,23 @@
 anbox for Debian
----------------
+----------------
 
-You should first download the Android image to /var/lib/anbox/android.img
-The prebuild image can be found at https://build.anbox.io/android-images
+In order to run Android system inside container, you need two kernel
+modules: ashmem_linux and binder_linux. Since Debian kernel 4.17, these
+two modules are enabled. You can find theme at,
+/lib/modules/`uname -r`/kernel/drivers/android/binder_linux.ko and
+/lib/modules/`uname -r`/kernel/drivers/staging/android/ashmem_linux.ko.
 .
-Then start the anbox-container-manager.service and the anbox-session-manager.service
-anbox-session-manager.service should be run as a systemd user service.
+If your kernel doesn't have these two modules, you can follow upstream
+instructions to install them with DKMS. Please see
+<https://github.com/anbox/anbox-modules/>.
 .
-Android application should be started from desktop environment.
+You also need to download the Android image to /var/lib/anbox/android.img
+The pre-build image can be found at <https://build.anbox.io/android-images>.
+.
+Then start the anbox-container-manager.service and the
+anbox-session-manager.service, anbox-session-manager.service is a systemd
+user service.
+.
+Android application can be started from desktop menu.
 
- -- Shengjing Zhu <i@zhsj.me>  Thu, 31 May 2018 18:00:00 +0800
+ -- Shengjing Zhu <i@zhsj.me>  Sat, 30 Jun 2018 00:00:00 +0800

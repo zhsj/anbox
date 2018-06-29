@@ -29,9 +29,8 @@ Vcs-Git: https://salsa.debian.org/zhsj-guest/anbox.git
 Vcs-Browser: https://salsa.debian.org/zhsj-guest/anbox
 
 Package: anbox
-Architecture: amd64 armel armhf i386
+Architecture: amd64 arm64 armhf
 Depends:
- anbox-modules-dkms,
  iptables,
  lxc (<< 1:3.0.0),
  ${misc:Depends},
@@ -39,22 +38,22 @@ Depends:
 Recommends:
  dbus-user-session,
 Description: Android in a box
- Anbox is a container-based approach to boot a full Android system on a regular
- GNU/Linux system.
+ Anbox is a container-based approach to boot a full Android system on a
+ regular GNU/Linux system.
  .
- In other words: Anbox will let you run Android on your Linux system without
- the slowness of virtualization.
+ In other words: Anbox will let you run Android on your Linux system
+ without the slowness of virtualization.
  .
- Anbox uses Linux namespaces (user, pid, uts, net, mount, ipc) to run a full
- Android system in a container and provide Android applications on any
+ Anbox uses Linux namespaces (user, pid, uts, net, mount, ipc) to run a
+ full Android system in a container and provide Android applications on any
  GNU/Linux-based platform.
  .
  The Android inside the container has no direct access to any hardware. All
- hardware access is going through the anbox daemon on the host. We're reusing
+ hardware access is going through the anbox daemon on the host. It reuses
  what Android implemented within the QEMU-based emulator for OpenGL ES
- accelerated rendering. The Android system inside the container uses different
- pipes to communicate with the host system and sends all hardware access
- commands through these.
+ accelerated rendering. The Android system inside the container uses
+ different pipes to communicate with the host system and sends all hardware
+ access commands through these.
  .
- This package needs an Android image where you can find at
- <https://build.anbox.io/>.
+ This package needs Android kernel modules and rootfs image, see
+ /usr/share/doc/anbox/README.Debian for information.
