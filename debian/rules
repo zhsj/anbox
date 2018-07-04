@@ -15,6 +15,6 @@ override_dh_auto_configure:
 
 override_dh_auto_install:
 	dh_auto_install
+	mv snap/gui/icon.png debian/anbox.png
 	rm -rf $(CURDIR)/debian/anbox/usr/lib/backward
 	rm -rf $(CURDIR)/debian/anbox/usr/include
-	install -m644 snap/gui/icon.png $(CURDIR)/debian/anbox/usr/share/pixmaps/anbox.png
