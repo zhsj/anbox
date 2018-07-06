@@ -2,6 +2,7 @@ Source: anbox
 Section: contrib/utils
 Priority: optional
 Maintainer: Shengjing Zhu <i@zhsj.me>
+Rules-Requires-Root: no
 Build-Depends:
  cmake,
  debhelper (>= 11),
