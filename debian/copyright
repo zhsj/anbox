@@ -64,6 +64,14 @@ Files: external/backtrace-cpp/*
 Copyright: 2013, Google Inc.
 License: Expat
 
+Files: external/cpu_features/*
+Copyright: 2017-2018, Google Inc.
+License:
+
+Files: external/cpu_features/*_ppc*
+Copyright: 2018, IBM
+License: Apache-2.0
+
 Files: external/glm/*
 Copyright: 2005-2015, G-Truc Creation (www.g-truc.net)
 License: Expat
@@ -113,10 +121,6 @@ License: Apache-2.0
 Files: scripts/anbox-bridge.sh
 Copyright: 2016, The Linux Containers Project
 License: Apache-2.0
-
-Files: scripts/anbox-init.sh
-Copyright: 2016, Simon Fels <morphis@gravedo.de>
-License: GPL-3
 
 Files: scripts/setup-partial-chroot.sh
 Copyright: 2016, Canonical Ltd.
