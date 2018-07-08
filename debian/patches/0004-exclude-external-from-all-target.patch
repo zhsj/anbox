@@ -1,0 +1,33 @@
+From: Shengjing Zhu <i@zhsj.me>
+Date: Sun, 8 Jul 2018 18:07:15 +0800
+Subject: exclude external from all target
+
+Signed-off-by: Shengjing Zhu <i@zhsj.me>
+---
+ CMakeLists.txt              | 2 +-
+ external/xdg/CMakeLists.txt | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 302934b..5afd2b7 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -109,7 +109,7 @@ set(ANBOX_STATEDIR_FULL "${CMAKE_INSTALL_FULL_LOCALSTATEDIR}/lib/anbox")
+ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/src/anbox/build/config.h.in
+                ${CMAKE_CURRENT_SOURCE_DIR}/src/anbox/build/config.h)
+ 
+-add_subdirectory(external)
++add_subdirectory(external EXCLUDE_FROM_ALL)
+ add_subdirectory(src)
+ add_subdirectory(tests)
+ add_subdirectory(android)
+diff --git a/external/xdg/CMakeLists.txt b/external/xdg/CMakeLists.txt
+index 249da48..8ad4f1d 100644
+--- a/external/xdg/CMakeLists.txt
++++ b/external/xdg/CMakeLists.txt
+@@ -21,4 +21,4 @@ add_executable(xdg_test xdg_test.cpp)
+ set_property(TARGET xdg_test PROPERTY CXX_STANDARD 11)
+ target_link_libraries(xdg_test xdg ${Boost_LIBRARIES})
+ 
+-add_test(xdg_test xdg_test)
++#add_test(xdg_test xdg_test)
