@@ -1,2 +1,3 @@
 0001-fix-spelling-errors-in-external-libraries.patch
 0002-revert-lxc-3-changes.patch
+0003-use-python3-for-emugl-headers-generate-scripts.patch
