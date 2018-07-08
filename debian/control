@@ -31,6 +31,8 @@ Vcs-Browser: https://salsa.debian.org/zhsj-guest/anbox
 
 Package: anbox
 Architecture: amd64 arm64 armhf
+Built-Using:
+ ${misc:Built-Using},
 Depends:
  iptables,
  libegl1,
