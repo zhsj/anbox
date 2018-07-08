@@ -66,7 +66,7 @@ License: Expat
 
 Files: external/cpu_features/*
 Copyright: 2017-2018, Google Inc.
-License:
+License: Apache-2.0
 
 Files: external/cpu_features/*_ppc*
 Copyright: 2018, IBM
