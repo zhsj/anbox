@@ -1,3 +1,31 @@
+anbox (0.0~git20180709-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+    + Add rootfs overlay feature.
+    + Fix build on arm64.
+  * d/patches: refresh 0002-revert-lxc-3-changes.patch (no changes).
+  * Move python2 Depends to python3.
+    + d/patches: add 0003-use-python3-for-emugl-headers-generate-scripts.patch
+    + d/control: use python3 in Build-Depends.
+  * exclude bundled external projects from building target.
+    + d/patches: add 0004-exclude-external-from-all-target.patch.
+    + d/rules: no longer need to remove files installed by external projects.
+    + d/control: remove libboost-test-dev from Build-Depends,
+      libboost-test-dev is used by external/xdg project, and now
+      we don't build tests in external/xdg.
+  * d/copyright: add external/cpu_features, new bundled library.
+    This library doesn't have stable abi and upstream wants the user to
+    bundle it.
+  * d/control: update Standards-Version to 4.1.5.
+    + d/control: Add Rules-Requires-Root: no.
+  * d/control: add libegl1 to Depends.
+  * d/control: add libgles2 to Depends, fixes autopkgtest failure.
+  * d/control: Depends lxc >= 1:2.0.0
+    making it BD-Uninstallable on Ubuntu, which has lxc 3 with epoch 0.
+  * d/rules,control: add Built-Using info for header only libraries.
+
+ -- Shengjing Zhu <i@zhsj.me>  Tue, 10 Jul 2018 10:45:42 +0800
+
 anbox (0.0~git20180612-1) unstable; urgency=medium
 
   * Initial release. (Closes: #884797)
