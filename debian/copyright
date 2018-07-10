@@ -60,8 +60,8 @@ Files: external/android-emugl/host/include/ETC1/etc1.h
 Copyright: 2009, Google Inc
 License: Apache-2.0
 
-Files: external/backtrace-cpp/*
-Copyright: 2013, Google Inc.
+Files: external/backward-cpp/*
+Copyright: 2013-2017, Google Inc.
 License: Expat
 
 Files: external/cpu_features/*
