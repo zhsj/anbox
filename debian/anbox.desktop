@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Anbox
-GenericName=Android in a box
+GenericName=Application Manager
+Comment=Android in a box
 Version=1.0
 Type=Application
 Icon=anbox
