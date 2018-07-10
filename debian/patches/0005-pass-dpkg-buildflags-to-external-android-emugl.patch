@@ -1,0 +1,23 @@
+From: Shengjing Zhu <i@zhsj.me>
+Date: Wed, 11 Jul 2018 00:30:37 +0800
+Subject: pass dpkg buildflags to external android-emugl
+
+Signed-off-by: Shengjing Zhu <i@zhsj.me>
+---
+ external/android-emugl/CMakeLists.txt | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/external/android-emugl/CMakeLists.txt b/external/android-emugl/CMakeLists.txt
+index 23173b3..f2e1c43 100644
+--- a/external/android-emugl/CMakeLists.txt
++++ b/external/android-emugl/CMakeLists.txt
+@@ -1,7 +1,7 @@
+ # Don't treat any warnings as error as we take the source directly from
+ # upstream and just compile it.
+-set(CMAKE_C_FLAGS "-Wall")
+-set(CMAKE_CXX_FLAGS "-std=c++11 -Wall")
++set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall")
++set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall")
+ 
+ # Ensure -fPIC
+ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
