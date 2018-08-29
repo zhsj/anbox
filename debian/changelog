@@ -1,3 +1,18 @@
+anbox (0.0~git20180821-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+    + Fix overlay mount order. (Closes: #907547)
+  * Remove anbox.udev, no longer needed.
+  * Add patch to pass dpkg-buildflags to external android-emugl.
+  * Take upstream dual lxc2/3 support patch, relax lxc-dev version.
+  * Add Comment to anbox.desktop.
+  * Update Standards-Version to 4.2.1. (no changes)
+  * Update my email address to zhsj@debian.org.
+  * Enable input support
+  * Disable Wayland support.
+
+ -- Shengjing Zhu <zhsj@debian.org>  Wed, 29 Aug 2018 19:03:10 +0800
+
 anbox (0.0~git20180709-1) unstable; urgency=medium
 
   * New upstream snapshot.
