@@ -20,8 +20,7 @@ Build-Depends:
  libsdl2-dev,
  libsdl2-image-dev,
  libsystemd-dev,
- lxc-dev (<< 1:3.0.0),
- lxc-dev (>= 1:2.0.0),
+ lxc-dev,
  protobuf-compiler,
  python3,
 Standards-Version: 4.1.5
@@ -37,8 +36,7 @@ Depends:
  iptables,
  libegl1,
  libgles2,
- lxc (<< 1:3.0.0),
- lxc (>= 1:2.0.0),
+ lxc,
  ${misc:Depends},
  ${shlibs:Depends},
 Recommends:
