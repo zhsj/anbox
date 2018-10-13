@@ -1,3 +1,13 @@
+anbox (0.0~git20180915-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+  * Remove merged patch 0002-bring-back-lxc2-support.patch
+  * Add Categories to desktop file, fix AppStream error.
+  * Don't remove file in upstream source tree.
+  * Add patch to fix ftbfs with new gmock.
+
+ -- Shengjing Zhu <zhsj@debian.org>  Sat, 13 Oct 2018 23:08:29 +0800
+
 anbox (0.0~git20180821-1) unstable; urgency=medium
 
   * New upstream snapshot.
