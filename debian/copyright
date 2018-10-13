@@ -9,7 +9,7 @@ Copyright: 2016-2018, Simon Fels <morphis@gravedo.de>
 License: GPL-3
 
 Files: debian/*
-Copyright: 2017, Shengjing Zhu <i@zhsj.me>
+Copyright: 2017, Shengjing Zhu <zhsj@debian.org>
 License: GPL-3
 
 Files: android/*
