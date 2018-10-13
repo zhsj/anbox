@@ -1,0 +1,21 @@
+From: Shengjing Zhu <zhsj@debian.org>
+Date: Sat, 13 Oct 2018 23:06:24 +0800
+Subject: fix ftbfs with gmock
+
+---
+ cmake/FindGMock.cmake | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/cmake/FindGMock.cmake b/cmake/FindGMock.cmake
+index 2078030..21f5cdb 100644
+--- a/cmake/FindGMock.cmake
++++ b/cmake/FindGMock.cmake
+@@ -77,7 +77,7 @@ target_link_libraries(gmock INTERFACE ${findgmock_gmock_lib} gtest)
+ 
+ add_library(gmock_main INTERFACE)
+ target_include_directories(gmock_main INTERFACE ${GMOCK_INCLUDE_DIRS})
+-target_link_libraries(gmock_main INTERFACE ${findgmock_gmock_main_lib} gmock)
++target_link_libraries(gmock_main INTERFACE ${findgmock_gmock_main_lib} gmock gtest_main)
+ 
+ set(GTEST_LIBRARIES gtest)
+ set(GTEST_MAIN_LIBRARIES gtest_main)
