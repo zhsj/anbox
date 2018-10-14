@@ -1,5 +1,7 @@
-anbox for Debian
+Anbox for Debian
 ----------------
+
+* Setup
 
 In order to run Android system inside container, you need two kernel
 modules: ashmem_linux and binder_linux. Since Debian kernel 4.17, these
@@ -20,4 +22,26 @@ user service.
 .
 Android application can be started from desktop menu.
 
- -- Shengjing Zhu <zhsj@debian.org>  Sat, 30 Jun 2018 00:00:00 +0800
+* Debug
+
+You can launch the anbox process manually with ANBOX_LOG_LEVEL=debug
+environment.
+.
+For example,
+$ env ANBOX_LOG_LEVEL=debug anbox session-manager
+$ env ANBOX_LOG_LEVEL=debug anbox launch --package=org.anbox.appmgr --component=org.anbox.appmgr.AppViewActivity
+.
+/var/lib/anbox/logs/container.log contains the LXC log.
+/var/lib/anbox/logs/console.log contains the console log of Android system,
+however this file is not available currently(LXC 3 needed).
+.
+Android root shell can be gained by running,
+$ sudo /usr/share/anbox/anbox-shell.sh
+Then you can run logcat inside to see the Android logs.
+
+* Misc
+
+Anbox may not work with Nvidia graphic drivers. If your meet segmentation
+fault, please try to uninstall the drivers first.
+
+ -- Shengjing Zhu <zhsj@debian.org>  Sat, 14 Oct 2018 15:00:00 +0800
