@@ -1,3 +1,17 @@
+anbox (0.0~git20181014-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+  * Update Vcs-{Git,Browser} URL.
+  * Update my email address to zhsj@debian.org in doc.
+  * Update README.Debian.
+    + Add debug instruction.
+    + Add notice for Nvidia drivers. (Closes: #906698)
+  * Remove patch merged in upstream.
+    - 0005-fix-ftbfs-with-gmock.patch
+  * Add note to update Android image when error occurs. (Closes: #910931)
+
+ -- Shengjing Zhu <zhsj@debian.org>  Fri, 26 Oct 2018 10:43:42 +0800
+
 anbox (0.0~git20180915-1) unstable; urgency=medium
 
   * New upstream snapshot.
