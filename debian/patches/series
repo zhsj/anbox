@@ -2,4 +2,3 @@
 0003-use-python3-for-emugl-headers-generate-scripts.patch
 0004-exclude-external-from-all-target.patch
 0005-pass-dpkg-buildflags-to-external-android-emugl.patch
-0005-fix-ftbfs-with-gmock.patch
