@@ -41,7 +41,9 @@ Then you can run logcat inside to see the Android logs.
 
 * Misc
 
-Anbox may not work with Nvidia graphic drivers. If your meet segmentation
-fault, please try to uninstall the drivers first.
+1. Anbox may not work with Nvidia graphic drivers. If your meet segmentation
+   fault, please try to uninstall the drivers first.
+2. If you see segfault or other errors from Android, you can try to update
+   Android rootfs image, as it may be fixed by upstream.
 
- -- Shengjing Zhu <zhsj@debian.org>  Sat, 14 Oct 2018 15:00:00 +0800
+ -- Shengjing Zhu <zhsj@debian.org>  Sat, 26 Oct 2018 10:30:00 +0800
