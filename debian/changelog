@@ -1,3 +1,9 @@
+anbox (0.0~git20181014-1~bpo9+1) stretch-backports; urgency=medium
+
+  * Rebuild for stretch-backports.
+
+ -- Shengjing Zhu <zhsj@debian.org>  Sun, 28 Oct 2018 14:44:49 +0800
+
 anbox (0.0~git20181014-1) unstable; urgency=medium
 
   * New upstream snapshot.
