@@ -36,9 +36,9 @@ Depends:
  iptables,
  libegl1,
  libgles2,
- lxc,
  ${misc:Depends},
  ${shlibs:Depends},
+ ${misc:LxcDepends},
 Recommends:
  dbus-user-session,
 Description: Android in a box
