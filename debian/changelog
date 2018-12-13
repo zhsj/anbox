@@ -1,3 +1,13 @@
+anbox (0.0~git20181210-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+    + Add SWIFTSHADER_PATH env to enable software rendering
+      outside snap (Closes: #909157)
+  * Ensure depending on right lxc version after rebuilding with
+    lxc3. (Closes: #915821)
+
+ -- Shengjing Zhu <zhsj@debian.org>  Fri, 14 Dec 2018 00:31:33 +0800
+
 anbox (0.0~git20181014-1) unstable; urgency=medium
 
   * New upstream snapshot.
