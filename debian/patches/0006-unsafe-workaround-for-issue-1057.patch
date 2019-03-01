@@ -1,0 +1,27 @@
+From: Shengjing Zhu <i@zhsj.me>
+Date: Fri, 1 Mar 2019 23:54:50 +0800
+Subject: unsafe workaround for issue 1057
+
+Bug: https://github.com/anbox/anbox/issues/1057
+Bug-Debian: https://bugs.debian.org/923403
+---
+ src/anbox/utils.cpp | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+diff --git a/src/anbox/utils.cpp b/src/anbox/utils.cpp
+index df3a815..c0b9b33 100644
+--- a/src/anbox/utils.cpp
++++ b/src/anbox/utils.cpp
+@@ -175,8 +175,10 @@ std::string prefix_dir_from_env(const std::string &path,
+ }
+ 
+ std::string process_get_exe_path(const pid_t &pid) {
+-  auto exe_path = string_format("/proc/%d/exe", pid);
+-  return boost::filesystem::read_symlink(exe_path).string();
++  // auto exe_path = string_format("/proc/%d/exe", pid);
++  // return boost::filesystem::read_symlink(exe_path).string();
++  // unsafe workaround for https://github.com/anbox/anbox/issues/1057
++  return "/usr/bin/anbox";
+ }
+ 
+ bool is_mounted(const std::string &path) {
