@@ -1,3 +1,10 @@
+anbox (0.0~git20190124-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+  * Add 0006-unsafe-workaround-for-issue-1057.patch (Closes: #923403)
+
+ -- Shengjing Zhu <zhsj@debian.org>  Sat, 02 Mar 2019 00:03:49 +0800
+
 anbox (0.0~git20181210-1) unstable; urgency=medium
 
   * New upstream snapshot.
