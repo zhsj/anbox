@@ -37,8 +37,8 @@ Depends:
  libegl1,
  libgles2,
  ${misc:Depends},
- ${shlibs:Depends},
  ${misc:LxcDepends},
+ ${shlibs:Depends},
 Recommends:
  dbus-user-session,
 Description: Android in a box
