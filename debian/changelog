@@ -1,3 +1,15 @@
+anbox (0.0~git20191022-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+  * Update debhelper compat to 12
+  * Update Standards-Version to 4.4.1 (no changes)
+  * Drop 0006-unsafe-workaround-for-issue-1057.patch
+  * Add patch to fix FTBFS issue for gmock (Closes: #943647)
+  * Update anbox manpage (Closes: #931070)
+  * Update README.Debian, better phrase (Closes: #930202)
+
+ -- Shengjing Zhu <zhsj@debian.org>  Sun, 27 Oct 2019 23:28:12 +0800
+
 anbox (0.0~git20190124-1) unstable; urgency=medium
 
   * New upstream snapshot.
